@@ -12,12 +12,14 @@
             <h3 class=" user"><%= post.username %></h3>
             <p class="posts"><%= post.content %></p>
         </div>
-        <hr>
+    </hr>
+    <a href="http://localhost:8080/posts/<%= post.id %>">See in details</a>
+    </br>
+    </br>
     <% }) %>
-
     </br>
     </br>
-    <a href="http://localhost:8080/posts/new"> Create new post </a>
+    <a href="http://localhost:8080/posts/new">Create new post </a>
 
 </body>
 </html>
