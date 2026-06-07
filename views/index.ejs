@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Posts</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Quara post</h1>
+
+    <% posts.forEach(post => { %>
+        <div class="posts">
+            <h3 class=" user"><%= post.username %></h3>
+            <p class="posts"><%= post.content %></p>
+        </div>
+        <hr>
+    <% }) %>
+</body>
+</html>
